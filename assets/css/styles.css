@@ -1,0 +1,143 @@
+body {
+	overflow-x:hidden;
+	font-family: Helvetica, sans-serif;
+}
+
+.intro-screen {
+	background-size: cover;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	background-position: center;	
+}
+
+.cover-screen {
+	height: 100vh;
+	width: 100vw;
+}
+
+.center-screen {
+	background-color: transparent;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.name {
+	color:white;
+	justify-content: center;
+	font-size: 120px;
+	font-weight: bold;
+	margin: 0px 0px 0px;
+	height: 100px;
+}
+
+.first-name {
+	margin: 0px 0px -10px;
+}
+
+.name-line {
+	width: 100%;
+	background-color: #ffffff;
+	height:1px;
+	margin-top:30px;
+	margin-bottom:0px;
+}
+
+.name-info {
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+}
+
+.profile-pic {
+	height:260px;
+	width:auto;
+	vertical-align: middle;
+	border: 10px solid #003262;
+	border-radius: 130px;
+}
+
+.about-spacer {
+	height:1px;
+	color:black;
+	background-color:black;
+}
+
+#berkeley {
+	color:#003262;
+}
+
+#about {
+	background-color:#46535E;
+}
+
+#about-front {
+	background-color:#DDD5C7;
+}
+
+#about p {
+	font-size:21px;
+	font-weight: bold;
+	font-weight:200;
+}
+
+#about h1 {
+	font-weight:700;
+}
+
+.name-info:hover {
+	color:white;
+}
+
+.icon-github:hover{
+	color:#51ab7b
+}
+
+.icon-ln:hover{
+	color:#003262
+}
+
+.icon-ig:hover{
+	color:#fdb515
+}
+
+.icon-em:hover{
+	color:#c6433c
+}
+
+.socials {
+	color: black;
+}
+
+#about h1 {
+	  font-size: 60px;
+}
+
+#about .col-md-4 {
+    margin-top: 35px;
+}
+
+@media (max-width: 767px) {
+	#about {
+		margin-top: 15px;
+	}
+	#about h1 {
+		font-size: 35px;
+	}
+
+	#about.center {
+		margin-top:35px;
+	}
+}
+
+.resume-jumbotron {
+    border-radius: 0 !important;
+	box-shadow: 0 0 20px gray inset;
+}
+
+.resume-title {
+	font-size:60px;
+}
