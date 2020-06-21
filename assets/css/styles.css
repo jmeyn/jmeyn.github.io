@@ -57,6 +57,10 @@ body {
 	color:white;
 }
 
+.about-screen {
+	overflow-x:hidden !important;
+}
+
 .profile-pic {
 	height:260px;
 	width:auto;
@@ -118,7 +122,7 @@ body {
 }
 
 #about .jumbotron {
-	
+	overflow-x:hidden !important;
     overflow: scroll;
 }
 
@@ -132,6 +136,7 @@ body {
 
 @media (max-width: 767px) {
 	#about {
+		overflow-x:hidden !important;
 		margin-top: 15px;
 	}
 	#about h1 {
@@ -144,7 +149,7 @@ body {
 }
 
 .resume-jumbotron {
-	box-shadow: 0 0 20px gray inset;
+	box-shadow: 0 0 30px gray inset;
 }
 
 .resume-title {
