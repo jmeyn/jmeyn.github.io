@@ -13,6 +13,11 @@ body {
 .cover-screen {
 	height: 100vh;
 	width: 100vw;
+	position:relative;
+}
+
+.jumbotron {
+    border-radius: 0 !important;
 }
 
 .center-screen {
@@ -112,11 +117,16 @@ body {
 	color: black;
 }
 
+#about .jumbotron {
+	
+    overflow: scroll;
+}
+
 #about h1 {
 	  font-size: 60px;
 }
 
-#about .col-md-4 {
+#about .col-md-5 {
     margin-top: 35px;
 }
 
@@ -134,7 +144,6 @@ body {
 }
 
 .resume-jumbotron {
-    border-radius: 0 !important;
 	box-shadow: 0 0 20px gray inset;
 }
 
