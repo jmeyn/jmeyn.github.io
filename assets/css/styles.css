@@ -121,13 +121,17 @@ body {
 	color: black;
 }
 
+.socials-screen {
+	height:auto;
+}
+
 #about .jumbotron {
 	overflow-x:hidden !important;
     overflow: scroll;
 }
 
 #about h1 {
-	  font-size: 60px;
+	font-size: 60px;
 }
 
 #about .col-md-5 {
