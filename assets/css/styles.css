@@ -1,6 +1,6 @@
 body {
-	overflow-x:hidden;
-	font-family: Helvetica, sans-serif;
+	overflow-x:hidden!important;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .intro-screen {
@@ -10,10 +10,21 @@ body {
 	background-position: center;	
 }
 
+
+::-webkit-scrollbar {
+display: none;
+}
+
 .cover-screen {
-	height: 100vh;
+	height: 110vh;
 	width: 100vw;
 	position:relative;
+}
+
+.cover-screen-intro {
+    height:100vh;
+    width: 100vw;
+    position:relative;
 }
 
 .jumbotron {
@@ -76,7 +87,7 @@ body {
 }
 
 #berkeley {
-	color:#003262;
+	color:#3B7EA1;
 }
 
 #about {
@@ -88,9 +99,7 @@ body {
 }
 
 #about p {
-	font-size:21px;
-	font-weight: bold;
-	font-weight:200;
+	font-size:23px;
 }
 
 #about h1 {
@@ -106,7 +115,7 @@ body {
 }
 
 .icon-ln:hover{
-	color:#003262
+	color:#4f5bd5
 }
 
 .icon-ig:hover{
@@ -153,9 +162,17 @@ body {
 }
 
 .resume-jumbotron {
-	box-shadow: 0 0 30px gray inset;
+    background-color:white;
+}
+
+.resume-content {
+	box-shadow: 0 0 5px inset;
 }
 
 .resume-title {
 	font-size:60px;
+}
+
+.resume-screen {
+    padding-top:10vh;
 }
