@@ -167,6 +167,8 @@ display: none;
 
 .resume-content {
 	box-shadow: 0 0 5px inset;
+    overflow-x: hidden !important;
+    overflow: scroll;
 }
 
 .resume-title {
@@ -175,4 +177,8 @@ display: none;
 
 .resume-screen {
     padding-top:10vh;
+}
+
+.footer {
+    padding-top:15px;
 }
