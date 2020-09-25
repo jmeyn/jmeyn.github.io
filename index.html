@@ -11,8 +11,12 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5dd0ba4884.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <!--Made by Julian Meyn, June 2020-->
@@ -21,8 +25,8 @@
     <div class="intro-screen cover-screen shadow-lg" id="intro-background">
         <div class="cover-screen-intro">
             <div class="jumbotron center-screen">
-                <h1 class="name first-name" data-aos="fade" data-aos-duration="2000" data-aos-delay="500">
-                    Julian
+                <h1 class="name first-name d-flex" data-aos="fade" data-aos-duration="2000" data-aos-delay="500">
+                   Julian
                 </h1>
                 <h1 class="name d-flex" data-aos="fade" data-aos-duration="2000" data-aos-delay="1000">
                     Meyn
@@ -32,6 +36,11 @@
                     <div class="col d-flex justify-content-center align-items-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="2500">
                         <a class="name-info d-flex" href="#about">
                             About
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="2750">
+                        <a class="name-info d-flex" href="#project">
+                            Projects
                         </a>
                     </div>
                     <div class="col d-flex justify-content-center align-items-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="3000">
@@ -102,7 +111,126 @@
         </div>
     </div>
 
-    <!-- Third screen (resume) -->
+    <!-- Third screen (projects) -->
+    <div class="cover-screen project-screen d-flex flex-column justify-content-center shadow-lg" id="project">
+        <div class="jumbotron project-jumbotron">
+            <div class="container">
+                <h1 class="display-2"><b>Projects</b></h1>
+            </div>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide project-content">
+                    <div class="row">
+                        <div class="row image-center">
+                            <div class="image-center">
+                                <img src="assets/img/classify.png" class="project-pic">   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="display-4 project-title">CS61Classify</div>
+                        <strong class="project-text language">RISC-V Assembly - September 2020</strong>
+                        <p class="project-text">
+                            Implemented an Artificial Neural Network to identify numbers from the MNIST dataset. 
+                            It can estimate what number was written in a small image with high precision.
+                            The challenge of this project was doing it all in <strong class="language">RISC-V</strong> assembly. 
+                            Overall the project was very insightful because it showed me how much we take what high-level languages do for granted.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-content">
+                    <div class="row">
+                        <div class="image-center">
+                            <img src="assets/img/game-of-life1.gif" class="project-pic">   
+                        </div>
+
+                        <div class="image-center">
+                            <img src="assets/img/game-of-life2.gif" class="project-pic">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="display-4 project-title">John Conway's Game of Life</div>
+                        <strong class="project-text language">C - September 2020</strong>
+                        <p class="project-text">
+                            Built a game of life simulator in <string class="language">C</string>! This was my first major project built in the C language.
+                            The simulator takes photos and runs 24 separate game of life instances for each of its 24 color channels. 
+                            This project was really fun because testing it always led to trippy art and I finally got the hang of C pointers.
+                            Also, I was able to make my own name generator in the simulator, which was nice.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-content">
+                    <div class="row">
+                        <div class="col-md-5 text-center">
+                            <img src="assets/img/textify1.png" class="project-pic">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="display-4 project-title">PhotoText</div>
+                            <strong class="project-text language">Flutter, Dart - August 2020</strong>
+                            <p class="project-text">
+                                I built an entire mobile app from scratch in <strong class="language">Flutter</strong> that converts photos into ASCII art.
+                                This was a really fun project because I had very minimal app development in the past, so taking the reigns over an entire project
+                                taught me a lot of valuable information. The app let's people choose photos from their Google Photos account, which was 
+                                my first introduction to an API interface. Saving the text art uses a small JSON database. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-content">
+                    <div class="row">
+                        <div class="image-center">
+                            <img src="assets/img/gitlet.png" class="project-pic">   
+                        </div>
+                    </div>
+                    <div>
+                        <div class="display-4 project-title">Gitlet - A Miniature Version Control System</div>
+                        <strong class="project-text language">Java - May 2020</strong>
+                        <p class="project-text">
+                            I programmed a standalone implementation of Git entirely from scratch in <strong class="language">Java</strong>. 
+                            It includes Git functions such as add, rm, branch, merge, pull, push, log, and checkout. 
+                            All in all, the project was roughly 1,500 lines of code and includes comprehensive unit and integration tests which is one of the largest I have ever done by myself.
+                            It taught me how necessary it is to plan everything well in advance and to make an abundant amount of test cases before moving on.
+                            I learned a lot about code organization, file I/O, and the inner workings of Git.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-content">
+                    <div class="row">
+                        <div class="col-md-5 text-center project-pic">
+                            <img src="assets/img/lines-of-action.png" class="project-pic">
+                        </div>
+                        <div class="col-md-7 about-text">
+                            <div class="display-4 project-title">Lines of Action - April 2020</div>
+                            <strong class="project-text language">Java</strong>
+                            <p class="project-text">
+                                Implemented the board game “Lines of Action” in Java, complete with GUI interface, manual, and an AI the user can play against.
+                                The AI implements a minimax decision-making algorithm, optimized with alpha-beta pruning to make the “best” move.
+                                This project was tedious because making the correct heuristics for the AI to properly function was extremely complicated and 
+                                making GUI elements in Java. However, making an AI that can I can hardly beat anymore was an achievement in itself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide text-center">
+                    <h1>More Projects Coming Soon!</h1>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Fourth screen (resume) -->
     <div class="cover-screen resume-screen shadow-lg" id="resume">
         <div class="jumbotron resume-jumbotron">
             <div class="container">

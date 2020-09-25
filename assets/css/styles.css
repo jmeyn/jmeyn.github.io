@@ -111,19 +111,19 @@ body {
 }
 
 .icon-github:hover{
-	color:#51ab7b
+	color:#51ab7b;
 }
 
 .icon-ln:hover{
-	color:#4f5bd5
+	color:#4f5bd5;
 }
 
 .icon-ig:hover{
-	color:#fdb515
+	color:#fdb515;
 }
 
 .icon-em:hover{
-	color:#c6433c
+	color:#c6433c;
 }
 
 .socials {
@@ -172,6 +172,70 @@ body {
 		margin-top:35px;
 	}
 }
+
+.project-screen {
+    background-color:white;
+}
+
+.project-title {
+    font-size:44px;
+}
+.project-text {
+    font-size: 25px;
+}
+
+.project-content {
+    overflow:scroll !important;
+}
+
+.language {
+    color:#000080;
+}
+
+.image-center {
+    margin: auto;
+    background-position: center;
+}
+
+.project-pic {
+    display: block;
+    margin: auto;
+    display: block;
+    text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .project-pic {
+        display: none;
+    }
+    .project-text {
+        font-size: 10px !important;
+    }
+}
+
+.project-jumbotron {
+
+    align-content: center;
+    justify-content: center;
+    background-color:white;
+    color: #12355B;
+    height:150px !important;
+    margin-top:0px !important;
+    padding-top:0px !important;
+    padding: 0px !important;
+    margin:0px;
+    padding-bottom:0px !important;
+    margin-bottom:0px !important;
+}
+
+.swiper-container {
+    width: 80vw;
+    height: 60%;
+    max-width: 1200px;
+}
+
 
 .resume-jumbotron {
     background-color:white;
