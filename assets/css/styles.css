@@ -198,6 +198,7 @@ body {
 }
 
 .project-pic {
+    object-fit:stretch;
     display: block;
     margin: auto;
     display: block;
@@ -206,14 +207,6 @@ body {
   margin-right:auto;
 }
 
-@media screen and (max-width: 1000px) {
-    .project-pic {
-        display: none;
-    }
-    .project-text {
-        font-size: 10px !important;
-    }
-}
 
 .project-jumbotron {
 

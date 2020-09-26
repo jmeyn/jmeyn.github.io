@@ -125,53 +125,56 @@
                 <!-- Slides -->
 
                 <div class="swiper-slide project-content">
-                    <div class="row">
-                        <div class="row image-center">
-                            <div class="image-center">
-                                <img src="assets/img/classify.png" class="project-pic">   
+                    <div class="col">
+                        <div class="row-md-5 image-center">
+                            <img src="assets/img/classify.png" class="project-pic">   
+                        </div>
+                        <div class="row-md-5">
+                            <div class="display-4 project-title">CS61Classify - A Hand-Written Number Classifier</div>
+                            <strong class="project-text language">RISC-V Assembly - May 2020</strong>
+                            <p class="project-text">
+                                Implemented an Artificial Neural Network to identify numbers from the MNIST dataset. 
+                                It can estimate what number was written in a small image with high precision.
+                                The challenge of this project was doing it all in <strong class="language">RISC-V</strong> assembly. 
+                                Overall the project was very insightful because it showed me how much we take what high-level languages do for granted.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide project-content">
+
+                     <div class="col">
+                        <div class="row-md-5 row image-center">
+                            <div class="col-md-5 image-center">
+                                <img src="assets/img/game-of-life1.gif" class="project-pic">   
+                            </div>
+                            <div class="col-md-5 image-center">
+                                <img src="assets/img/game-of-life2.gif" class="project-pic">
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="display-4 project-title">CS61Classify</div>
-                        <strong class="project-text language">RISC-V Assembly - September 2020</strong>
-                        <p class="project-text">
-                            Implemented an Artificial Neural Network to identify numbers from the MNIST dataset. 
-                            It can estimate what number was written in a small image with high precision.
-                            The challenge of this project was doing it all in <strong class="language">RISC-V</strong> assembly. 
-                            Overall the project was very insightful because it showed me how much we take what high-level languages do for granted.
-                        </p>
+                        <div class="row-md-5">
+                            <div class="display-4 project-title">John Conway's Game of Life</div>
+                            <strong class="project-text language">C - September 2020</strong>
+                            <p class="project-text">
+                                Built a game of life simulator in <string class="language">C</string>! This was my first major project built in the C language.
+                                The simulator takes photos and runs 24 separate game of life instances for each of its 24 color channels. 
+                                This project was really fun because testing it always led to trippy art and I finally got the hang of C pointers.
+                                Also, I was able to make my own name generator in the simulator, which was nice.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide project-content">
                     <div class="row">
-                        <div class="image-center">
-                            <img src="assets/img/game-of-life1.gif" class="project-pic">   
-                        </div>
-
-                        <div class="image-center">
-                            <img src="assets/img/game-of-life2.gif" class="project-pic">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="display-4 project-title">John Conway's Game of Life</div>
-                        <strong class="project-text language">C - September 2020</strong>
-                        <p class="project-text">
-                            Built a game of life simulator in <string class="language">C</string>! This was my first major project built in the C language.
-                            The simulator takes photos and runs 24 separate game of life instances for each of its 24 color channels. 
-                            This project was really fun because testing it always led to trippy art and I finally got the hang of C pointers.
-                            Also, I was able to make my own name generator in the simulator, which was nice.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide project-content">
-                    <div class="row">
-                        <div class="col-md-5 text-center">
-                            <img src="assets/img/textify1.png" class="project-pic">
-                        </div>
                         <div class="col-md-5">
+                            <div class="container text-center">
+                                <img src="assets/img/loa1.png" class="project-pic">
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 about-text">
                             <div class="display-4 project-title">PhotoText</div>
                             <strong class="project-text language">Flutter, Dart - August 2020</strong>
                             <p class="project-text">
@@ -185,32 +188,33 @@
                 </div>
 
                 <div class="swiper-slide project-content">
-                    <div class="row">
-                        <div class="image-center">
+                    <div class="col">
+                        <div class="row-md-5 image-center">
                             <img src="assets/img/gitlet.png" class="project-pic">   
                         </div>
-                    </div>
-                    <div>
-                        <div class="display-4 project-title">Gitlet - A Miniature Version Control System</div>
-                        <strong class="project-text language">Java - May 2020</strong>
-                        <p class="project-text">
-                            I programmed a standalone implementation of Git entirely from scratch in <strong class="language">Java</strong>. 
-                            It includes Git functions such as add, rm, branch, merge, pull, push, log, and checkout. 
-                            All in all, the project was roughly 1,500 lines of code and includes comprehensive unit and integration tests which is one of the largest I have ever done by myself.
-                            It taught me how necessary it is to plan everything well in advance and to make an abundant amount of test cases before moving on.
-                            I learned a lot about code organization, file I/O, and the inner workings of Git.
-                        </p>
+                        <div class="row-md-5">
+                            <div class="display-4 project-title">Gitlet - A Miniature Version Control System</div>
+                            <strong class="project-text language">Java - May 2020</strong>
+                            <p class="project-text">
+                                I programmed a standalone implementation of Git entirely from scratch in <strong class="language">Java</strong>. 
+                                It includes Git functions such as add, rm, branch, merge, pull, push, log, and checkout. 
+                                All in all, the project was roughly 1,500 lines of code and includes comprehensive unit and integration tests which is one of the largest I have ever done by myself.
+                                It taught me how necessary it is to plan everything well in advance and to make an abundant amount of test cases before moving on.
+                                I learned a lot about code organization, file I/O, and the inner workings of Git.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide project-content">
+                    <div class="item">
                     <div class="row">
-                        <div class="col-md-5 text-center project-pic">
-                            <img src="assets/img/lines-of-action.png" class="project-pic">
+                        <div class="col-md-5 float-left">
+                            <img src="assets/img/loa1.png" class="project-pic">
                         </div>
-                        <div class="col-md-7 about-text">
-                            <div class="display-4 project-title">Lines of Action - April 2020</div>
-                            <strong class="project-text language">Java</strong>
+                        <div class="col-md-5 float-right project-text">
+                            <div class="display-4 project-title">Lines of Action</div>
+                            <strong class="project-text language">Java - April 2020</strong>
                             <p class="project-text">
                                 Implemented the board game “Lines of Action” in Java, complete with GUI interface, manual, and an AI the user can play against.
                                 The AI implements a minimax decision-making algorithm, optimized with alpha-beta pruning to make the “best” move.
@@ -218,6 +222,7 @@
                                 making GUI elements in Java. However, making an AI that can I can hardly beat anymore was an achievement in itself.
                             </p>
                         </div>
+                    </div>
                     </div>
                 </div>
 
